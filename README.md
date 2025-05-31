@@ -1,2 +1,2 @@
-# vibe-code-website
-vibe-code website
+# vibe-code
+vibe-code
