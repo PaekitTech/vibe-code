@@ -1,0 +1,132 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: #fafafa;
+  color: #222;
+  line-height: 1.6;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #007aff;
+}
+#hero {
+  padding: 2rem 2rem 1.5rem 2rem; /* move content up a bit more */
+  text-align: center;
+}
+#hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.project-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+section {
+  max-width: 900px;
+  margin: 0 auto 1.2rem auto; /* reduce bottom margin between sections */
+  padding: 0 2rem;
+}
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #fff;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+#changing-word {
+  transition: opacity 0.6s;
+  opacity: 1;
+}
+#changing-word.fade {
+  opacity: 0;
+}
+.profile-pic {
+  width: 196px;
+  height: 196px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 3px solid #fff;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.hero-content h2,
+.hero-content p {
+  text-align: center;
+}
+#typewriter {
+  min-height: 1.6em; /* Adjust as needed for your font size */
+  display: block;
+}
+.skills-icons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: right;
+  align-items: center;
+  margin: 1rem 0;
+}
+.skill-icon {
+  width: 48px;
+  height: 48px;
+  filter: grayscale(0.2) drop-shadow(0 2px 6px rgba(0,0,0,0.07));
+  transition: transform 0.2s, filter 0.2s;
+  cursor: pointer;
+}
+.skill-icon:hover {
+  transform: scale(1.15);
+  filter: none;
+}
+@media (max-width: 600px) {
+  header, section {
+    padding: 1rem;
+  }
+  #hero {
+    padding: 3rem 1rem 2rem 1rem;
+  }
+}
